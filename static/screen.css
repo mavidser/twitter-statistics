@@ -1,0 +1,62 @@
+body {
+	margin: 20px auto;
+	max-width: 1200px;
+	background-color: #eee;
+}
+
+img {
+	width: 100%;
+}
+
+.fb {
+	background-color: #3b5998 !important;
+}
+
+.ig {
+	background-color: #3f729b !important;
+}
+
+.tw {
+	background-color: #55acee !important;
+}
+.panel-heading>a>i {
+	font-size: 20px;
+	vertical-align: middle;
+	margin-right: 15px;
+}
+.panel-heading > a {
+	color: #eee;
+}
+
+.panel-heading > a:hover {
+	color: #fff;
+}
+
+form, form div { display: inline; }
+.form-control {
+	height: 40px;
+}
+.input-group-addon {
+	font-size: 20px;
+	width: 50px;
+}
+.btn-default {
+	background-color: #7979dd;
+	color: #eee;
+	height: 40px;
+	width: 85px;
+}
+
+.btn-default:hover {
+	background-color: #55f;
+	color: #fff;
+}
+
+.input {
+	max-width: 400px;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+.panel-body {
+	overflow: auto;
+}

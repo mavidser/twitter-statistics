@@ -1,0 +1,8 @@
+*.pyc
+lib/
+!lib/README.md
+.DS_Store
+
+config.ini
+app.yaml
+appengine_config.py
