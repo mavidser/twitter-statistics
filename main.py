@@ -1,4 +1,3 @@
-#TODO: WHEN X CREATED AN EVENT
 import json
 import Queue
 import threading
@@ -21,7 +20,6 @@ def get_data(handle):
             url += '&max_id='+max_id
         auth                = OAuth1(app_key,app_secret,access_token,access_token_secret)
         result              =  requests.get(url,auth=auth)
-        # print result.text
         result = result.json()
         result = [{'id':x['id'],'time':x['created_at']} for x in result]
 
@@ -35,8 +33,6 @@ def get_data(handle):
         return day,hour
     # extract_time('Sun Jun 01 06:19:10 +0000 2014')
 
-    # twitter= result.json()
-    # print twitter[199]['id']
     max_id=None
     count=5
     twitter=[]
@@ -46,7 +42,6 @@ def get_data(handle):
         max_id=str(twitter[len(twitter)-1]['id'])
         count=count-1
         print len(twitter)
-    # print twitter
 
     count=[[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
